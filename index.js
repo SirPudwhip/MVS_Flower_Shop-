@@ -13,7 +13,8 @@ function populateList(data) {
     let button = document.createElement('button');
     let pInventory = document.createElement('p');
     let ulComments = document.createElement('ul');
-
+    let subCard = document.createElement('ul')
+    subCard.className = "subcard"
     pName.textContent = data.name;
     pPrice = data.price;
     img.src = data.image
@@ -24,9 +25,11 @@ function populateList(data) {
     flowerCard.append(li)
     li.append(pName);
     li.append(pPrice);
-    li.append(img);
+    subCard.append(img);
     li.append(button);
     li.append(ulComments);
 
-} 
+    li.append(subCard)
+
+}
 

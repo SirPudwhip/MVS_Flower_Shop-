@@ -71,9 +71,11 @@ function populateList(data) {
     })
 
     button.addEventListener('click', () => {
-        if (pInventory.textContent > 0 ) {
-        pInventory.textContent = pInventory.textContent-1;
-        return pInventory;
+        let invenArray = pInventory.textContent.split(' ')
+        if (invenArray [0] >0) {
+            invenArray[0] -= 1
+            let test = `${invenArray[0]} in stock`
+            pInventory.textContent = test
         }
         else {
             alert ("We are all out of these! ")
@@ -85,11 +87,13 @@ function populateList(data) {
     li.append(pPrice);
     li.append(img);
     li.append(button);
-    li.append(ulComments);
-    li.append(pInventory)
-    li.append(comment)
 
-    
+    li.append(pInventory)
+
+    li.append(comment)
+    li.append(ulComments);
+
+
 }
 
 

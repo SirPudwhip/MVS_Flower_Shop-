@@ -7,48 +7,27 @@ showFlowers()
 
 let flowerCard = document.querySelector('.flower-list');
 let flowerSelector = document.querySelector('#flower-selector')
-console.log(flowerSelector)
-
-// flowerSelector.addEventListener('change', (e) => {
-//     let flowerCheck = document.querySelectorAll('.card')
-
-//     if (flowerSelector.value === "rose") {
-//         flowerCheck.forEach(removeItem);
-//         showFlowers();
-//         flowerCheck.forEach()
-        
-//     }
-//     else if (flowerSelector.value === "tulip") {
-    
-//     }     
-//     else if (flowerSelector.value === "carnation") {
-    
-//     }
-//     else if (flowerSelector.value === "assorted") {
-    
-//     } 
-//     else if (flowerSelector.value === "lily") {
-    
-//     }
-// })
 
 flowerSelector.addEventListener('change', (e) => {
     let flowerCheck = document.querySelectorAll('.card');
     flowerCheck.forEach(function(element) {
         if (flowerSelector.value === "rose" && element.classList.contains("rose")) {
-            element.style.display = "block";
+            element.style.display = "inline-grid";
         }
         else if (flowerSelector.value === "tulip" && element.classList.contains("tulip")) {
-            element.style.display = "block";
-        }     
+            element.style.display = "inline-grid";
+        }
         else if (flowerSelector.value === "carnation" && element.classList.contains("carnation")) {
-            element.style.display = "block";
+            element.style.display = "inline-grid";
         }
         else if (flowerSelector.value === "assorted" && element.classList.contains("assorted")) {
-            element.style.display = "block";
-        } 
+            element.style.display = "inline-grid";
+        }
         else if (flowerSelector.value === "lily" && element.classList.contains("lily")) {
-            element.style.display = "block";
+            element.style.display = "inline-grid";
+        }
+        else if (flowerSelector.value === "all") {
+            element.style.display = "inline-grid";
         }
         else {
             element.style.display = "none";
@@ -62,9 +41,6 @@ function removeItem(element) {
 }
 
 function populateList(data) {
-
-
-    console.log(data.image);
     let li = document.createElement('li');
     let pName = document.createElement('p');
     let pPrice = document.createElement('p');
@@ -72,7 +48,7 @@ function populateList(data) {
     let button = document.createElement('button');
     let pInventory = document.createElement('p');
     let ulComments = document.createElement('ul');
-    let comment = document.createElement('form'); 
+    let comment = document.createElement('form');
 
     pName.textContent = data.name;
     pPrice = data.price;
@@ -81,7 +57,7 @@ function populateList(data) {
     pInventory = data.inventory
     li.className = "card";
     li.classList.add(data.type);
-    comment.innerHTML = 
+    comment.innerHTML =
     `<label for="comment">Tell us your thoughts!</label><br>
     <input type="text" id="comment" name="comment" value=""><br>
     <input type="submit" value="Submit">`
@@ -103,7 +79,7 @@ function populateList(data) {
     li.append(pInventory)
     li.append(comment)
 
-
+    
 }
 
 

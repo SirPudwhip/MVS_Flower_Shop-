@@ -71,12 +71,24 @@ function populateList(data) {
         comment.reset();
     })
 
+    img.addEventListener("click", clickMe);
+    function clickMe(){
+        let newName = pName.
+        window.open(pName)
+    }
+
     button.addEventListener('click', () => {
         let invenArray = pInventory.textContent.split(' ')
+        let shopBtn = document.getElementById('shopping-cart')
+        let shopBtnArray = shopBtn.textContent.split(' ')
+        console.log(shopBtnArray)
         if (invenArray [0] >0) {
             invenArray[0] -= 1
             let test = `${invenArray[0]} in stock`
             pInventory.textContent = test
+            // shopBtnArray[0] += 1
+            // let test2 = shopBtnArray[0]
+            // shopBtn.textContent = test2
             updateLikes(li, invenArray);
         }
         else {
@@ -93,7 +105,7 @@ function populateList(data) {
     li.append(pPrice);
     li.append(img);
     li.append(button);
-
+    //li.append(newButton)
     li.append(pInventory)
 
     li.append(comment)
@@ -119,22 +131,22 @@ function updateLikes(li, invenArray) {
 
 function createForm() {
     let div = document.createElement('div');
-    div.innerHTML = 
+    div.innerHTML =
     `<button class="open-button" onclick="openForm()">Open Form</button>
 
     <div class="form-popup" id="myForm">
       <form action="/action_page.php" class="form-container">
         <h1>Purchase Information</h1>
-    
+
         <label for="card-number"><b>Card Number</b></label>
         <input type="text" placeholder="Enter card number" name="card number" required>
-    
+
         <label for="expiration-date"><b>Expiration Date</b></label>
         <input type="text" placeholder="ex. 05/26" name="expiration-date" required>
-    
+
         <label for="security-code"><b>Security Code</b></label>
         <input type="text" placeholder="ex. 059" name="security-code" required>
-    
+
         <button type="submit" class="btn">Purchase</button>
         <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
       </form>
@@ -145,7 +157,7 @@ function createForm() {
 function openForm() {
     document.getElementById("myForm").style.display = "inline-grid";
   }
-  
-  function closeForm() {
+
+function closeForm() {
     document.getElementById("myForm").style.display = "none";
   }

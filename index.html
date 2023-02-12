@@ -3,13 +3,21 @@
   <script defer src="index.js"></script>
   <head>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Flower Shop</title>
     <h1>MVS Flower Shop </h1>
   </head>
 <body>
-<p id="greeting">Welcome to our flower shop. We have different variety of flowers where you can choose from</p>
+<p id="greeting">
+  11 BROADWAY 2ND FLOOR </br>
+  NEW YORK, NY 10004 </br>
+  <strong>(888) - 958 - 0569</strong>
+
+</p>
   <h1 class = 'heading'>Our Flower Selection</h1>
+
     <p>
+
         Choose Flower:
       <select name="Flower Type" id="flower-selector">
         <option value="all">All</option>
@@ -19,6 +27,7 @@
         <option value="assorted">Assorted</option>
         <option value="lily">Lily</option>
       </select>
+      <button id="shopping-cart" style="font-size:24px; margin-left:500px"> 0 item <i class="fa fa-shopping-cart"></i></button>
 
       <ul class = "flower-list">
       </ul>

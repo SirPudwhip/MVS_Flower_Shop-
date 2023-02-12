@@ -5,7 +5,7 @@ function showFlowers() { fetch ('http://localhost:3000/flowers')
 
 showFlowers()
 
-let totalCost = 0; 
+let totalCost = 0;
 let flowerCard = document.querySelector('.flower-list');
 let flowerSelector = document.querySelector('#flower-selector')
 let shopBtn = document.querySelector('#shopping-cart')
@@ -121,7 +121,7 @@ shopBtn.addEventListener('click', (e) => {
         openForm();
         e.target.class = "open";
     } else {
-        closeForm(); 
+        closeForm();
         e.target.class = "closed"
     }
 })
@@ -148,9 +148,9 @@ function populateCart(data){
     let costTotal = document.getElementById('cost-total')
     let trItem = document.createElement('tr');
     let trPrice = document.createElement('tr');
-    addTotalCost(data.price); 
+    addTotalCost(data.price);
 
-    costTotal.textContent = `Your total cost is ${parseFloat(totalCost, 2)}`
+    costTotal.textContent = `Your total cost is ${parseFloat(totalCost).toFixed(2)}`
     trItem.textContent = data.name;
     trPrice.textContent = data.price;
     namePlace.append(trItem);

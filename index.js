@@ -98,6 +98,7 @@ function populateList(data) {
 
     li.append(comment)
     li.append(ulComments);
+    li.append(createForm());
 
 
 }
@@ -116,3 +117,35 @@ function updateLikes(li, invenArray) {
     .then ((json) => console.log(json))
 }
 
+function createForm() {
+    let div = document.createElement('div');
+    div.innerHTML = 
+    `<button class="open-button" onclick="openForm()">Open Form</button>
+
+    <div class="form-popup" id="myForm">
+      <form action="/action_page.php" class="form-container">
+        <h1>Purchase Information</h1>
+    
+        <label for="card-number"><b>Card Number</b></label>
+        <input type="text" placeholder="Enter card number" name="card number" required>
+    
+        <label for="expiration-date"><b>Expiration Date</b></label>
+        <input type="text" placeholder="ex. 05/26" name="expiration-date" required>
+    
+        <label for="security-code"><b>Security Code</b></label>
+        <input type="text" placeholder="ex. 059" name="security-code" required>
+    
+        <button type="submit" class="btn">Purchase</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      </form>
+    </div>`
+    return div;
+}
+
+function openForm() {
+    document.getElementById("myForm").style.display = "inline-grid";
+  }
+  
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+  }

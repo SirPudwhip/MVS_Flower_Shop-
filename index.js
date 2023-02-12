@@ -49,6 +49,17 @@ function populateList(data) {
     let pInventory = document.createElement('p');
     let ulComments = document.createElement('ul');
     let comment = document.createElement('form');
+    let pInfo = document.createElement('p')
+    pInfo.innerHTML =
+    `<div class="popup" onclick="myFunction()">Click me!
+    <span class="popuptext" id="myPopup">Popup text...</span>
+    </div>`
+
+    pInfo.addEventListener('click', () => {
+        var popup = document.getElementById("myPopup");
+        popup.classList.toggle("show");
+        pName.append(pInfo)
+    })
 
     pName.textContent = data.name;
     pPrice = data.price;
@@ -81,6 +92,10 @@ function populateList(data) {
         }
         else {
             alert ("We are all out of these! ")
+            document.querySelector('button').disabled = true;
+            button.style.background = 'grey'
+            button.textContent = 'Sold Out'
+            li.style.background = 'red'
         }
     })
 

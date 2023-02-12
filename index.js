@@ -49,7 +49,7 @@ function populateList(data) {
     let pInventory = document.createElement('p');
     let ulComments = document.createElement('ul');
     let comment = document.createElement('form');
-
+    let shopBtn = document.getElementById('shopping-cart')
     pName.textContent = data.name;
     pPrice = data.price;
     img.src = data.image
@@ -71,19 +71,38 @@ function populateList(data) {
         comment.reset();
     })
 
+    shopBtn.addEventListener('click', (e) => {
+        console.log(e.target)
+    })
+
     button.addEventListener('click', (e) => {
         console.log(e.target)
         let invenArray = pInventory.textContent.split(' ')
+
+        let shopBtnArray = shopBtn.textContent.split(' ')
         if (invenArray [0] >0) {
             invenArray[0] -= 1
             let test = `${invenArray[0]} in stock`
             pInventory.textContent = test
+            let newNumItem = parseInt(shopBtnArray[0]) + 1
+            if (newNumItem < 2) {
+                let test2 =  `${newNumItem} item`
+                shopBtn.textContent= test2
+            }
+            else {
+                let test2 = `${newNumItem} items`
+                shopBtn.textContent= test2
+            }
+
             updateInventory(li, invenArray);
         }
         else {
             alert ("We are all out of these! ")
         }
     })
+
+
+
 
     flowerCard.append(li)
     li.append(pName);
@@ -129,7 +148,8 @@ function openForm(formID) {
 
     // document.getElementById(    // console.log(document.getElementById(formID));'#myForm').closest(".form-container").style.display = "inline-grid";
   }
-  
+
   function closeForm() {
     document.getElementById("myForm").style.display = "none";
   }
+

@@ -55,3 +55,7 @@
 input {
     margin: 5px;
 }
+
+body {
+    background-color: rgb(250, 242, 234);
+}

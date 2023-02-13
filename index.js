@@ -17,7 +17,7 @@ flowerSelector.addEventListener('change', (e) => {
         else if (flowerSelector.value === "tulip" && element.classList.contains("tulip")) {
             element.style.display = "inline-grid";
         }
-        else if (flowerSelector.value === "carnation" && element.classList.contains("carnation")) {
+        else if (flowerSelector.value === "carnations" && element.classList.contains("carnations")) {
             element.style.display = "inline-grid";
         }
         else if (flowerSelector.value === "assorted" && element.classList.contains("assorted")) {

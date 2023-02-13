@@ -9,33 +9,61 @@ let flowerCard = document.querySelector('.flower-list');
 let flowerSelector = document.querySelector('#flower-selector')
 console.log(flowerSelector)
 
-flowerSelector.addEventListener('change', (e) => {
-    let flowerCheck = document.querySelectorAll('.card')
-    if (flowerSelector.value === "rose") {
-        flowerCheck.forEach(removeItem);
-        showFlowers();
-        flowerCheck.forEach()
+// flowerSelector.addEventListener('change', (e) => {
+//     let flowerCheck = document.querySelectorAll('.card')
+
+//     if (flowerSelector.value === "rose") {
+//         flowerCheck.forEach(removeItem);
+//         showFlowers();
+//         flowerCheck.forEach()
         
-    }
-    else if (flowerSelector.value === "tulip") {
+//     }
+//     else if (flowerSelector.value === "tulip") {
     
-    }     
-    else if (flowerSelector.value === "carnation") {
+//     }     
+//     else if (flowerSelector.value === "carnation") {
     
-    }
-    else if (flowerSelector.value === "assorted") {
+//     }
+//     else if (flowerSelector.value === "assorted") {
     
-    } 
-    else if (flowerSelector.value === "lily") {
+//     } 
+//     else if (flowerSelector.value === "lily") {
     
-    }
-})
+//     }
+// })
+
+flowerSelector.addEventListener('change', (e) => {
+    let flowerCheck = document.querySelectorAll('.card');
+    flowerCheck.forEach(function(element) {
+        if (flowerSelector.value === "rose" && element.classList.contains("rose")) {
+            element.style.display = "block";
+        }
+        else if (flowerSelector.value === "tulip" && element.classList.contains("tulip")) {
+            element.style.display = "block";
+        }     
+        else if (flowerSelector.value === "carnation" && element.classList.contains("carnation")) {
+            element.style.display = "block";
+        }
+        else if (flowerSelector.value === "assorted" && element.classList.contains("assorted")) {
+            element.style.display = "block";
+        } 
+        else if (flowerSelector.value === "lily" && element.classList.contains("lily")) {
+            element.style.display = "block";
+        }
+        else {
+            element.style.display = "none";
+        }
+    });
+});
+
 
 function removeItem(element) {
     element.remove();
 }
 
 function populateList(data) {
+
+
     console.log(data.image);
     let li = document.createElement('li');
     let pName = document.createElement('p');

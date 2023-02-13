@@ -18,7 +18,7 @@ function populateList(data) {
     pPrice = data.price;
     img.src = data.image
     button.textContent = "Purchase"
-    pInventory = data.pInventory
+    pInventory = data.inventory
     li.className = "card"
 
     flowerCard.append(li)
@@ -27,6 +27,7 @@ function populateList(data) {
     li.append(img);
     li.append(button);
     li.append(ulComments);
+    li.append(pInventory)
 
 } 
 

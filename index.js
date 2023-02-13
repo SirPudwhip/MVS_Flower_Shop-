@@ -13,7 +13,6 @@ function populateList(data) {
     let button = document.createElement('button');
     let pInventory = document.createElement('p');
     let ulComments = document.createElement('ul');
-
     pName.textContent = data.name;
     pPrice = data.price;
     img.src = data.image
@@ -29,5 +28,6 @@ function populateList(data) {
     li.append(ulComments);
     li.append(pInventory)
 
-} 
+
+}
 

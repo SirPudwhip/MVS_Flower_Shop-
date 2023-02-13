@@ -1,3 +1,14 @@
+.heading {
+    text-align: center;
+  }
+  
+  p {
+    text-align: center;
+  }
+
+  h1 {
+    text-align: center;
+  }
 
     .card {
         display: inline-grid;

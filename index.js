@@ -54,7 +54,7 @@ function populateList(data) {
     pPrice = data.price;
     img.src = data.image
     button.textContent = "Purchase"
-    pInventory.textContent = data.inventory
+    pInventory.textContent = `${data.inventory} in stock`
     li.className = "card";
     li.classList.add(data.type);
     comment.innerHTML =

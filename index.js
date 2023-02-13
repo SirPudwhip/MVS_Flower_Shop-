@@ -54,7 +54,7 @@ function populateList(data) {
     pPrice = data.price;
     img.src = data.image
     button.textContent = "Purchase"
-    pInventory = data.inventory
+    pInventory.textContent = data.inventory
     li.className = "card";
     li.classList.add(data.type);
     comment.innerHTML =
@@ -68,6 +68,16 @@ function populateList(data) {
         newComment.textContent = e.target.comment.value;
         ulComments.append(newComment);
         comment.reset();
+    })
+
+    button.addEventListener('click', () => {
+        if (pInventory.textContent > 0 ) {
+        pInventory.textContent = pInventory.textContent-1;
+        return pInventory;
+        }
+        else {
+            alert ("We are all out of these! ")
+        }
     })
 
     flowerCard.append(li)

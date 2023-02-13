@@ -1,0 +1,57 @@
+
+{
+    "flowers": [
+        {
+        "id": 1,
+        "name": "one-dozen-classic-rose",
+        "image": "https://cdn3.1800flowers.com/wcsstore/Flowers/images/catalog/160032mggv1x.jpg?width=545&height=597&quality=80&auto=webp&optimize=%7Bmedium%7D",
+        "price": "89.99",
+        "inventory": 10,
+        "type": "rose"
+        },
+
+        {
+        "id": 2,
+        "name":"sweetest-love-tulips",
+        "image":"https://cdn1.1800flowers.com/wcsstore/Flowers/images/catalog/142457mx.jpg?width=545&height=597&quality=80&auto=webp&optimize=%7Bmedium%7D",
+        "price": "64.99",
+        "inventory": 10,
+        "type": "tuplip"
+        },
+
+        {
+        "id":3,
+        "name":"pink-peony-wereath",
+        "image":"https://cdn2.1800flowers.com/wcsstore/Flowers/images/catalog/156969sx.jpg?width=545&height=597&quality=80&auto=webp&optimize=%7Bmedium%7D",
+        "price": "129.99",
+        "inventory": 10,
+        "type": "assorted"
+
+        },
+        {
+        "id": 4,
+        "name": "",
+        "image": "",
+        "price": "",
+        "inventory": 10,
+        "type": ""
+        },
+        {
+        "id": 5,
+        "name": "",
+        "image": "",
+        "price": "",
+        "inventory": 10,
+        "type": ""
+        },
+        {
+        "id": 6,
+        "name": "",
+        "image": "",
+        "price": "",
+        "inventory": 10,
+        "type": ""
+
+        }
+    ]
+}

@@ -164,3 +164,23 @@ body {
   .form-container .btn:hover, .open-button:hover {
     opacity: 1;
   } */
+
+  footer {
+    background: linear-gradient(to right, rgb(5, 63, 110), rgb(40, 158, 159));
+    color: white;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding: 0.5px;
+    border-radius: 10px;
+  }
+  .row {
+    display: flex;
+    margin: auto;
+  }
+  .column {
+    flex: 50%;
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: center;
+  }

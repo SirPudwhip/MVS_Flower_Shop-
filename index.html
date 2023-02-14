@@ -15,6 +15,12 @@
   <strong>(888) - 958 - 0569</strong>
 
 </p> -->
+<p id="greeting">
+  xxx
+</p>
+  <h1 class = 'heading'>Our Flower Selection</h1>
+
+    <p>
 
     <style>
     #greeting {
@@ -51,7 +57,23 @@
         <option value="assorted">Assorted</option>
         <option value="lily">Lily</option>
       </select>
-      <button id="shopping-cart" style="font-size:24px; margin-left:500px"> 0 item <i class="fa fa-shopping-cart"></i></button>
+      <button id="shopping-cart" style="font-size:24px; margin-left:500px; background:linear-gradient(to left, rgb(5, 63, 110), rgb(40, 158, 159));;">0 item<i class="fa fa-shopping-cart"></i></button>
+      <form id= 'form ${data.id}' class = "form-container" action="/action_page.php">
+        <h2>Purchase Information</h2>
+        <table id="cart-content"></table>
+
+        <label for="card-number"><b>Card Number</b></label>
+        <input type="text" placeholder="Enter card number" name="card number" required>
+
+        <label for="expiration-date"><b>Expiration Date</b></label>
+        <input type="text" placeholder="ex. 05/26" name="expiration-date" required>
+
+        <label for="security-code"><b>Security Code</b></label>
+        <input type="text" placeholder="ex. 059" name="security-code" required>
+
+        <button type="submit" class="btn">Purchase</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      </form>
 
       <ul class = "flower-list">
       </ul>
@@ -59,4 +81,31 @@
     </p>
 
 </body>
+<footer>
+  <div class="row">
+    <div class="column">
+      11 BROADWAY 2ND FLOOR </br>
+    NEW YORK, NY 10004 </br>
+    <strong>(888) - 958 - 0569</strong>
+    </div>
+    <div class="column">
+      MON: 9:00 AM - 6:00 PM </BR>
+      TUE: 9:00 AM - 6:00 PM </BR>
+      WED: 9:00 AM - 6:00 PM </BR>
+      THU: 9:00 AM - 6:00 PM </BR>
+      FRI: 9:00 AM - 6:00 PM </BR>
+      SAT: FART</BR>
+      SUN: SLEEP
+    </div>
+    <div class="column">
+      <a href="#">ABOUT US </a></BR>
+      <a href="#">REVIEWS</a> </BR>
+      <a href="#">SPECIAL OFFERS</a> </BR>
+      <a href="#">CONTACT US</a> </BR>
+      <a href="#">SITE MAP</a> </BR>
+    </div>
+  </div>
+
+
+</footer>
 </html>

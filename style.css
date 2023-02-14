@@ -11,6 +11,9 @@ body {
   #greeting{
       text-align: center;
       margin-bottom: -200px;
+  #greeting {
+    text-align: center;
+    margin-bottom: -200px;
   }
 
 
@@ -43,7 +46,7 @@ body {
 
 }
 
- 
+
 .card:hover {
     transform: scale(1.1);
     }
@@ -195,3 +198,43 @@ body {
     margin-right: 25px;
     text-align: center;
   }
+
+  .social {
+    margin: auto;
+    width: fit-content;
+    font-size: 50px;
+  }
+
+  .dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+
+  .dropup {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropup-content {
+    display: none;
+    position: absolute;
+    bottom: 50px;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropup-content a {
+    color: black;
+    padding: 5px 5px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropup-content a:hover {background-color: #ddd;}
+  .dropup:hover .dropup-content {display: block;}
+  .dropup:hover .dropbtn {background-color: #3e8e41;}

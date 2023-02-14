@@ -150,7 +150,7 @@ function populateCart(data){
     let trPrice = document.createElement('tr');
     addTotalCost(data.price); 
 
-    costTotal.textContent = `Your total cost is ${parseFloat(totalCost, 2)}`
+    costTotal.textContent = `Your total cost is ${parseFloat(totalCost).toFixed(2)}`
     trItem.textContent = data.name;
     trPrice.textContent = data.price;
     namePlace.append(trItem);

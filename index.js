@@ -157,6 +157,10 @@ function populateCart(data){
     namePrice.append(trPrice);
     console.log(totalCost);
     return totalCost
+    list.append(trItem);
+    list.append(trPrice);
+    let totalPrice = 0;
+
 }
 
 function addTotalCost(cost) {

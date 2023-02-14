@@ -1,9 +1,16 @@
+/* 
+body {
+    background-image: url('https://previews.123rf.com/images/nv27/nv272005/nv27200500018/147118806-red-and-yellow-tulips-on-a-white-background-top-view-floral-background-for-flower-shop-website.jpg');
+    background-size: cover;
+  } */
 .heading {
     text-align: center;
   }
 
-  p {
-    text-align: center;
+ 
+  #greeting{
+      text-align: center;
+      margin-bottom: -200px;
   }
 
 

@@ -8,8 +8,13 @@
 
   h1 {
     text-align: center;
-    background: rgb(5, 63, 110);
+    background: linear-gradient(to right, rgb(5, 63, 110), rgb(40, 158, 159));
     color: salmon;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+    font-size: 48px;
+    letter-spacing: 2px;
+    padding: 20px;
+    border-radius: 10px;
   }
 
   .card {

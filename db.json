@@ -5,7 +5,7 @@
       "name": "One Dozen Classic Rose",
       "image": "https://cdn3.1800flowers.com/wcsstore/Flowers/images/catalog/160032mggv1x.jpg?width=545&height=597&quality=80&auto=webp&optimize=%7Bmedium%7D",
       "price": "$89.99",
-      "inventory": 6,
+      "inventory": 0,
       "type": "rose"
     },
     {
@@ -13,7 +13,7 @@
       "name": "Sweetest Love Tulips",
       "image": "https://cdn1.1800flowers.com/wcsstore/Flowers/images/catalog/142457mx.jpg?width=545&height=597&quality=80&auto=webp&optimize=%7Bmedium%7D",
       "price": "$64.99",
-      "inventory": 10,
+      "inventory": 0,
       "type": "tulip"
     },
     {
@@ -21,7 +21,7 @@
       "name": "Pink Peony Wereath",
       "image": "https://cdn2.1800flowers.com/wcsstore/Flowers/images/catalog/156969sx.jpg?width=545&height=597&quality=80&auto=webp&optimize=%7Bmedium%7D",
       "price": "$129.99",
-      "inventory": 10,
+      "inventory": 0,
       "type": "assorted"
     },
     {
@@ -45,7 +45,7 @@
       "name": "Cherished Blooms Bouquet",
       "image": "https://cdn1.1800flowers.com/wcsstore/Flowers/images/catalog/160076mpkcv2wc4x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize=%7Bmedium%7D",
       "price": "$69.99",
-      "inventory": 10,
+      "inventory": 0,
       "type": "carnations"
     },
     {
@@ -61,7 +61,7 @@
       "name": "Passion for Purple Roses",
       "image": "https://cdn3.1800flowers.com/wcsstore/Flowers/images/catalog/104518mpuv5x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize=%7Bmedium%7D",
       "price": "$74.99",
-      "inventory": 9,
+      "inventory": 1,
       "type": "rose"
     },
     {

@@ -5,8 +5,10 @@ function showFlowers() { fetch ('http://localhost:3000/flowers')
 
 showFlowers()
 
+let totalCost = 0; 
 let flowerCard = document.querySelector('.flower-list');
 let flowerSelector = document.querySelector('#flower-selector')
+let shopBtn = document.querySelector('#shopping-cart')
 
 flowerSelector.addEventListener('change', (e) => {
     let flowerCheck = document.querySelectorAll('.card');
@@ -71,9 +73,6 @@ function populateList(data) {
         comment.reset();
     })
 
-    shopBtn.addEventListener('click', (e) => {
-        console.log(e.target)
-    })
 
     button.addEventListener('click', (e) => {
         console.log(e.target)
@@ -117,6 +116,16 @@ function populateList(data) {
 
 }
 
+shopBtn.addEventListener('click', (e) => {
+    if (e.target.class != "open") {
+        openForm();
+        e.target.class = "open";
+    } else {
+        closeForm(); 
+        e.target.class = "closed"
+    }
+})
+
 function updateInventory(li, invenArray) {
     fetch(`http://localhost:3000/flowers/${li.id}`, {
         method: 'PATCH',
@@ -134,22 +143,35 @@ function updateInventory(li, invenArray) {
 }
 
 function populateCart(data){
-    let list = document.getElementById('cart-content');
+    let namePlace = document.getElementById('item-name')
+    let namePrice = document.getElementById('item-price')
+    let costTotal = document.getElementById('cost-total')
     let trItem = document.createElement('tr');
     let trPrice = document.createElement('tr');
+    addTotalCost(data.price); 
+
+    costTotal.textContent = `Your total cost is ${parseFloat(totalCost, 2)}`
     trItem.textContent = data.name;
     trPrice.textContent = data.price;
-    list.append(trItem);
-    list.append(trPrice);
+    namePlace.append(trItem);
+    namePrice.append(trPrice);
+    console.log(totalCost);
+    return totalCost
 }
 
-function openForm(formID) {
-    // console.log(formID);
+function addTotalCost(cost) {
+    let newCost = parseFloat(cost.replace("$", ""), 2);
+    totalCost = parseFloat(totalCost + newCost, 2);
+    totalCost = parseFloat(totalCost, 2)
+}
 
-    // document.getElementById(    // console.log(document.getElementById(formID));'#myForm').closest(".form-container").style.display = "inline-grid";
+
+
+
+function closeForm() {
+  document.getElementById("checkout-form").style.display = "none";
+}
+
+function openForm() {
+    document.getElementById("checkout-form").style.display = "block";
   }
-
-  function closeForm() {
-    document.getElementById("myForm").style.display = "none";
-  }
-

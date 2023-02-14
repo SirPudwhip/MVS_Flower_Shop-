@@ -57,10 +57,14 @@
         <option value="assorted">Assorted</option>
         <option value="lily">Lily</option>
       </select>
-      <button id="shopping-cart" style="font-size:24px; margin-left:500px; background:linear-gradient(to left, rgb(5, 63, 110), rgb(40, 158, 159));;">0 item<i class="fa fa-shopping-cart"></i></button>
-      <form id= 'form ${data.id}' class = "form-container" action="/action_page.php">
+      <button id="shopping-cart" class= "closed" style="font-size:24px; margin-left:500px; background:linear-gradient(to left, rgb(5, 63, 110), rgb(40, 158, 159));;">0 item<i class="fa fa-shopping-cart"></i></button>
+      <form id= 'checkout-form' class = "form-container" action="/action_page.php">
         <h2>Purchase Information</h2>
-        <table id="cart-content"></table>
+        <table id="cart-content">
+            <th id = "item-name">Item</th>
+            <th id = "item-price">Price</th>
+       </table>
+       <p id="cost-total"></p>
 
         <label for="card-number"><b>Card Number</b></label>
         <input type="text" placeholder="Enter card number" name="card number" required>

@@ -53,7 +53,7 @@ function populateList(data) {
     pName.textContent = data.name;
     pPrice = data.price;
     img.src = data.image
-    button.textContent = "Purchase"
+    button.textContent = "Add to cart"
     pInventory.textContent = `${data.inventory} in stock`
     li.className = "card";
     li.id = data.id;
@@ -71,32 +71,17 @@ function populateList(data) {
         comment.reset();
     })
 
-    img.addEventListener("click", clickMe);
-    function clickMe(){
-        let newName = pName.
-        window.open(pName)
-    }
-
-    button.addEventListener('click', () => {
+    button.addEventListener('click', (e) => {
+        console.log(e.target)
         let invenArray = pInventory.textContent.split(' ')
-        let shopBtn = document.getElementById('shopping-cart')
-        let shopBtnArray = shopBtn.textContent.split(' ')
-        console.log(shopBtnArray)
         if (invenArray [0] >0) {
             invenArray[0] -= 1
             let test = `${invenArray[0]} in stock`
             pInventory.textContent = test
-            // shopBtnArray[0] += 1
-            // let test2 = shopBtnArray[0]
-            // shopBtn.textContent = test2
-            updateLikes(li, invenArray);
+            updateInventory(li, invenArray);
         }
         else {
             alert ("We are all out of these! ")
-            document.querySelector('button').disabled = true;
-            button.style.background = 'grey'
-            button.textContent = 'Sold Out'
-            li.style.background = 'red'
         }
     })
 
@@ -105,17 +90,15 @@ function populateList(data) {
     li.append(pPrice);
     li.append(img);
     li.append(button);
-    //li.append(newButton)
+
     li.append(pInventory)
 
     li.append(comment)
     li.append(ulComments);
-    li.append(createForm());
-
 
 }
 
-function updateLikes(li, invenArray) {
+function updateInventory(li, invenArray) {
     fetch(`http://localhost:3000/flowers/${li.id}`, {
         method: 'PATCH',
         body: JSON.stringify ({
@@ -126,38 +109,27 @@ function updateLikes(li, invenArray) {
         }
     })
     .then ((res => res.json()))
-    .then ((json) => console.log(json))
+    .then ((data) => {
+        populateCart(data)
+    })
 }
 
-function createForm() {
-    let div = document.createElement('div');
-    div.innerHTML =
-    `<button class="open-button" onclick="openForm()">Open Form</button>
-
-    <div class="form-popup" id="myForm">
-      <form action="/action_page.php" class="form-container">
-        <h1>Purchase Information</h1>
-
-        <label for="card-number"><b>Card Number</b></label>
-        <input type="text" placeholder="Enter card number" name="card number" required>
-
-        <label for="expiration-date"><b>Expiration Date</b></label>
-        <input type="text" placeholder="ex. 05/26" name="expiration-date" required>
-
-        <label for="security-code"><b>Security Code</b></label>
-        <input type="text" placeholder="ex. 059" name="security-code" required>
-
-        <button type="submit" class="btn">Purchase</button>
-        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-      </form>
-    </div>`
-    return div;
+function populateCart(data){
+    let list = document.getElementById('cart-content');
+    let trItem = document.createElement('tr');
+    let trPrice = document.createElement('tr');
+    trItem.textContent = data.name;
+    trPrice.textContent = data.price;
+    list.append(trItem);
+    list.append(trPrice);
 }
 
-function openForm() {
-    document.getElementById("myForm").style.display = "inline-grid";
+function openForm(formID) {
+    // console.log(formID);
+
+    // document.getElementById(    // console.log(document.getElementById(formID));'#myForm').closest(".form-container").style.display = "inline-grid";
   }
-
-function closeForm() {
+  
+  function closeForm() {
     document.getElementById("myForm").style.display = "none";
   }

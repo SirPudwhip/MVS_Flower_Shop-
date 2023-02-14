@@ -28,6 +28,22 @@
         <option value="lily">Lily</option>
       </select>
       <button id="shopping-cart" style="font-size:24px; margin-left:500px"> 0 item <i class="fa fa-shopping-cart"></i></button>
+      <form id= 'form ${data.id}' class = "form-container" action="/action_page.php">
+        <h2>Purchase Information</h2>
+        <table id="cart-content"></table>
+    
+        <label for="card-number"><b>Card Number</b></label>
+        <input type="text" placeholder="Enter card number" name="card number" required>
+    
+        <label for="expiration-date"><b>Expiration Date</b></label>
+        <input type="text" placeholder="ex. 05/26" name="expiration-date" required>
+    
+        <label for="security-code"><b>Security Code</b></label>
+        <input type="text" placeholder="ex. 059" name="security-code" required>
+    
+        <button type="submit" class="btn">Purchase</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      </form>
 
       <ul class = "flower-list">
       </ul>

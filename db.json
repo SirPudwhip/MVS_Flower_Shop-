@@ -5,7 +5,7 @@
       "name": "One Dozen Classic Rose",
       "image": "https://cdn3.1800flowers.com/wcsstore/Flowers/images/catalog/160032mggv1x.jpg?width=545&height=597&quality=80&auto=webp&optimize=%7Bmedium%7D",
       "price": "$89.99",
-      "inventory": 69,
+      "inventory": 65,
       "type": "rose"
     },
     {
@@ -13,7 +13,11 @@
       "name": "Sweetest Love Tulips",
       "image": "https://cdn1.1800flowers.com/wcsstore/Flowers/images/catalog/142457mx.jpg?width=545&height=597&quality=80&auto=webp&optimize=%7Bmedium%7D",
       "price": "$64.99",
+<<<<<<< HEAD
       "inventory": 71,
+=======
+      "inventory": 59,
+>>>>>>> 22c6b17e3be3912d55e5be481215f4b1c214bafa
       "type": "tulip"
     },
     {
@@ -21,7 +25,11 @@
       "name": "Pink Peony Wereath",
       "image": "https://cdn2.1800flowers.com/wcsstore/Flowers/images/catalog/156969sx.jpg?width=545&height=597&quality=80&auto=webp&optimize=%7Bmedium%7D",
       "price": "$129.99",
+<<<<<<< HEAD
       "inventory": 76,
+=======
+      "inventory": 63,
+>>>>>>> 22c6b17e3be3912d55e5be481215f4b1c214bafa
       "type": "assorted"
     },
     {
@@ -29,7 +37,11 @@
       "name": "Enchanted Rose Medley Bouquet",
       "image": "https://cdn1.1800flowers.com/wcsstore/Flowers/images/catalog/104403sv24x.jpg?width=545&height=597&quality=80&auto=webp&optimize=%7Bmedium%7D",
       "price": "$66.99",
+<<<<<<< HEAD
       "inventory": 72,
+=======
+      "inventory": 78,
+>>>>>>> 22c6b17e3be3912d55e5be481215f4b1c214bafa
       "type": "rose"
     },
     {
@@ -37,7 +49,7 @@
       "name": "Lavender Garden Bouquet",
       "image": "https://cdn3.1800flowers.com/wcsstore/Flowers/images/catalog/160557spuv5ch29x.jpg?width=545&height=597&quality=80&auto=webp&optimize=%7Bmedium%7D",
       "price": "$79.99",
-      "inventory": 95,
+      "inventory": 92,
       "type": "carnations"
     },
     {

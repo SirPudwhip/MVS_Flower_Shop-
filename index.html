@@ -8,16 +8,40 @@
     <h1>MVS Flower Shop </h1>
   </head>
 <body>
-<p id="greeting">
+
+<!-- <p id="greeting">
   11 BROADWAY 2ND FLOOR </br>
   NEW YORK, NY 10004 </br>
   <strong>(888) - 958 - 0569</strong>
 
-</p>
-  <h1 class = 'heading'>Our Flower Selection</h1>
+</p> -->
 
-    <p>
-
+    <style>
+    #greeting {
+      font-family: 'Arial Black', sans-serif;
+      font-size: 28px;
+      height: 300px;
+      color: #000000;
+      text-align: center;
+      text-shadow: 2px 2px #e1e1e1;
+    }
+    #greeting span {
+      color: rgb(250, 0, 0);
+    }
+    </style>
+    
+    <style>
+        p {
+          text-align: center;
+          font-size: 1.2em;
+        }
+      </style>
+      
+    <p id="greeting">Be My <span>Valentine!</span><br>Flowers with impact</p>
+    <p>&#x2764; Hand picked just for you.<br><br>&#x2764; Unique flower arrangements<br><br>&#x2764; Best way to say you care.</p>
+   <h1 class = 'heading'>Our Flower Selection</h1>
+   
+   <p>
         Choose Flower:
       <select name="Flower Type" id="flower-selector">
         <option value="all">All</option>

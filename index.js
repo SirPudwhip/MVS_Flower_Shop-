@@ -179,3 +179,6 @@ function closeForm() {
 function openForm() {
     document.getElementById("checkout-form").style.display = "block";
   }
+
+
+  // Wow, this sure is a huge change I'm making 

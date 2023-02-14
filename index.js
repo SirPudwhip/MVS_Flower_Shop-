@@ -56,6 +56,7 @@ function populateList(data) {
     button.textContent = "Purchase"
     pInventory.textContent = `${data.inventory} in stock`
     li.className = "card";
+    li.id = data.id;
     li.classList.add(data.type);
     comment.innerHTML =
     `<label for="comment">Tell us your thoughts!</label><br>
@@ -76,6 +77,7 @@ function populateList(data) {
             invenArray[0] -= 1
             let test = `${invenArray[0]} in stock`
             pInventory.textContent = test
+            updateLikes(li, invenArray);
         }
         else {
             alert ("We are all out of these! ")
@@ -96,5 +98,17 @@ function populateList(data) {
 
 }
 
-
+function updateLikes(li, invenArray) {
+    fetch(`http://localhost:3000/flowers/${li.id}`, {
+        method: 'PATCH',
+        body: JSON.stringify ({
+            inventory: invenArray[0]
+        }),
+        headers: {
+            'Content-type': 'application/json'
+        }
+    })
+    .then ((res => res.json()))
+    .then ((json) => console.log(json))
+}
 

@@ -1,89 +1,84 @@
-
 {
-    "flowers": [
-        {
-        "id": 1,
-        "name": "One Dozen Classic Rose",
-        "image": "https://cdn3.1800flowers.com/wcsstore/Flowers/images/catalog/160032mggv1x.jpg?width=545&height=597&quality=80&auto=webp&optimize=%7Bmedium%7D",
-        "price": "$89.99",
-        "inventory": 10,
-        "type": "rose"
-        },
-
-        {
-        "id": 2,
-        "name":"Sweetest Love Tulips",
-        "image":"https://cdn1.1800flowers.com/wcsstore/Flowers/images/catalog/142457mx.jpg?width=545&height=597&quality=80&auto=webp&optimize=%7Bmedium%7D",
-        "price": "$64.99",
-        "inventory": 10,
-        "type": "tulip"
-        },
-
-        {
-        "id":3,
-        "name":"Pink Peony Wereath",
-        "image":"https://cdn2.1800flowers.com/wcsstore/Flowers/images/catalog/156969sx.jpg?width=545&height=597&quality=80&auto=webp&optimize=%7Bmedium%7D",
-        "price": "$129.99",
-        "inventory": 10,
-        "type": "assorted"
-
-        },
-        {
-        "id": 4,
-        "name": "Enchanted Rose Medley Bouquet",
-        "image": "https://cdn1.1800flowers.com/wcsstore/Flowers/images/catalog/104403sv24x.jpg?width=545&height=597&quality=80&auto=webp&optimize=%7Bmedium%7D",
-        "price": "$66.99",
-        "inventory": 10,
-        "type": "rose"
-        },
-        {
-        "id": 5,
-        "name": "Lavender Garden Bouquet",
-        "image": "https://cdn3.1800flowers.com/wcsstore/Flowers/images/catalog/160557spuv5ch29x.jpg?width=545&height=597&quality=80&auto=webp&optimize=%7Bmedium%7D",
-        "price": "$79.99",
-        "inventory": 10,
-        "type": "carnations"
-        },
-        {
-        "id": 6,
-        "name": "Cherished Blooms Bouquet",
-        "image": "https://cdn1.1800flowers.com/wcsstore/Flowers/images/catalog/160076mpkcv2wc4x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize=%7Bmedium%7D",
-        "price": "$69.99",
-        "inventory": 10,
-        "type": "carnations"
-
-        },
-        {
-        "id": 7,
-        "name": "Fields of Europe",
-        "image": "https://cdn3.1800flowers.com/wcsstore/Flowers/images/catalog/191113dxx.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize=%7Bmedium%7D",
-        "price": "$59.99",
-        "inventory": 10,
-        "type": "carnations"
-        },
-        {
-        "id": 8,
-        "name": "Passion for Purple Roses",
-        "image": "https://cdn3.1800flowers.com/wcsstore/Flowers/images/catalog/104518mpuv5x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize=%7Bmedium%7D",
-        "price": "$74.99",
-        "inventory": 10,
-        "type": "rose"
-        },
-        {
-        "id": 9,
-        "name": "Victorian Romance",
-        "image": "https://cdn3.1800flowers.com/wcsstore/Flowers/images/catalog/191248lx.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize=%7Bmedium%7D",
-        "price": "$89.99",
-        "inventory": 10,
-        "type": "rose"
-        },
-        {
-        "id": 10,
-        "name": "Key to My Heart",
-        "image": "https://cdn3.1800flowers.com/wcsstore/Flowers/images/catalog/191238xlx.jpg?width=545&height=597&quality=80&auto=webp&optimize=%7Bmedium%7D",
-        "price": "$99.99",
-        "inventory": 10,
-        "type": "lily"
-        }
-    ]
+  "flowers": [
+    {
+      "id": 1,
+      "name": "One Dozen Classic Rose",
+      "image": "https://cdn3.1800flowers.com/wcsstore/Flowers/images/catalog/160032mggv1x.jpg?width=545&height=597&quality=80&auto=webp&optimize=%7Bmedium%7D",
+      "price": "$89.99",
+      "inventory": 6,
+      "type": "rose"
+    },
+    {
+      "id": 2,
+      "name": "Sweetest Love Tulips",
+      "image": "https://cdn1.1800flowers.com/wcsstore/Flowers/images/catalog/142457mx.jpg?width=545&height=597&quality=80&auto=webp&optimize=%7Bmedium%7D",
+      "price": "$64.99",
+      "inventory": 10,
+      "type": "tulip"
+    },
+    {
+      "id": 3,
+      "name": "Pink Peony Wereath",
+      "image": "https://cdn2.1800flowers.com/wcsstore/Flowers/images/catalog/156969sx.jpg?width=545&height=597&quality=80&auto=webp&optimize=%7Bmedium%7D",
+      "price": "$129.99",
+      "inventory": 10,
+      "type": "assorted"
+    },
+    {
+      "id": 4,
+      "name": "Enchanted Rose Medley Bouquet",
+      "image": "https://cdn1.1800flowers.com/wcsstore/Flowers/images/catalog/104403sv24x.jpg?width=545&height=597&quality=80&auto=webp&optimize=%7Bmedium%7D",
+      "price": "$66.99",
+      "inventory": 10,
+      "type": "rose"
+    },
+    {
+      "id": 5,
+      "name": "Lavender Garden Bouquet",
+      "image": "https://cdn3.1800flowers.com/wcsstore/Flowers/images/catalog/160557spuv5ch29x.jpg?width=545&height=597&quality=80&auto=webp&optimize=%7Bmedium%7D",
+      "price": "$79.99",
+      "inventory": 10,
+      "type": "carnations"
+    },
+    {
+      "id": 6,
+      "name": "Cherished Blooms Bouquet",
+      "image": "https://cdn1.1800flowers.com/wcsstore/Flowers/images/catalog/160076mpkcv2wc4x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize=%7Bmedium%7D",
+      "price": "$69.99",
+      "inventory": 10,
+      "type": "carnations"
+    },
+    {
+      "id": 7,
+      "name": "Fields of Europe",
+      "image": "https://cdn3.1800flowers.com/wcsstore/Flowers/images/catalog/191113dxx.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize=%7Bmedium%7D",
+      "price": "$59.99",
+      "inventory": 10,
+      "type": "carnations"
+    },
+    {
+      "id": 8,
+      "name": "Passion for Purple Roses",
+      "image": "https://cdn3.1800flowers.com/wcsstore/Flowers/images/catalog/104518mpuv5x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize=%7Bmedium%7D",
+      "price": "$74.99",
+      "inventory": 10,
+      "type": "rose"
+    },
+    {
+      "id": 9,
+      "name": "Victorian Romance",
+      "image": "https://cdn3.1800flowers.com/wcsstore/Flowers/images/catalog/191248lx.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize=%7Bmedium%7D",
+      "price": "$89.99",
+      "inventory": 10,
+      "type": "rose"
+    },
+    {
+      "id": 10,
+      "name": "Key to My Heart",
+      "image": "https://cdn3.1800flowers.com/wcsstore/Flowers/images/catalog/191238xlx.jpg?width=545&height=597&quality=80&auto=webp&optimize=%7Bmedium%7D",
+      "price": "$99.99",
+      "inventory": 10,
+      "type": "lily"
+    }
+  ]
 }

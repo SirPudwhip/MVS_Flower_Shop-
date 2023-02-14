@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <script defer src="index.js"></script>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Flower Shop</title>
+    <h1>MVS Flower Shop </h1>
+  </head>
+<body>
+
+<!-- <p id="greeting">
+  11 BROADWAY 2ND FLOOR </br>
+  NEW YORK, NY 10004 </br>
+  <strong>(888) - 958 - 0569</strong>
+
+</p> -->
+    <p>
+
+    <style>
+    #greeting {
+      font-family: 'Arial Black', sans-serif;
+      font-size: 28px;
+      height: 300px;
+      color: #000000;
+      text-align: center;
+      text-shadow: 2px 2px #e1e1e1;
+    }
+    #greeting span {
+      color: rgb(250, 0, 0);
+    }
+    </style>
+
+    <style>
+        p {
+          text-align: center;
+          font-size: 1.2em;
+        }
+      </style>
+
+    <p id="greeting">Be My <span>Valentine!</span><br>Flowers with impact</p>
+    <!-- <p>&#x2764; Hand picked just for you.<br><br>&#x2764; Unique flower arrangements<br><br>&#x2764; Best way to say you care.</p>
+   -->
+   <p>
+    <span style="color: red;">&#x2764;</span> Hand picked just for you.<br><br>
+    <span style="color: red;">&#x2764;</span> Unique flower arrangements<br><br>
+    <span style="color: red;">&#x2764;</span> Best way to say you care.
+  </p>
+    <h1 class = 'heading'>Our Flower Selection</h1>
+
+   <p>
+        Choose Flower:
+      <select name="Flower Type" id="flower-selector">
+        <option value="all">All</option>
+        <option value="rose">Rose</option>
+        <option value="tulip">Tulip</option>
+        <option value="carnations">Carnations</option>
+        <option value="assorted">Assorted</option>
+        <option value="lily">Lily</option>
+      </select>
+      <button id="shopping-cart" class= "closed" style="font-size:24px; margin-left:500px; background:linear-gradient(to left, rgb(5, 63, 110), rgb(40, 158, 159));;">0 item<i class="fa fa-shopping-cart"></i></button>
+      <form id= 'checkout-form' class = "form-container" action="/action_page.php">
+        <h2>Purchase Information</h2>
+        <table id="cart-content">
+            <th id = "item-name">Item</th>
+            <th id = "item-price">Price</th>
+       </table>
+       <p id="cost-total"></p>
+
+        <label for="card-number"><b>Card Number</b></label>
+        <input type="text" placeholder="Enter card number" name="card number" required>
+
+        <label for="expiration-date"><b>Expiration Date</b></label>
+        <input type="text" placeholder="ex. 05/26" name="expiration-date" required>
+
+        <label for="security-code"><b>Security Code</b></label>
+        <input type="text" placeholder="ex. 059" name="security-code" required>
+
+        <button type="submit" class="btn">Purchase</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      </form>
+
+      <ul class = "flower-list">
+      </ul>
+      </ul>
+    </p>
+
+</body>
+<footer>
+  <div class="row">
+    <div class="column">
+      11 BROADWAY 2ND FLOOR </br>
+    NEW YORK, NY 10004 </br>
+    <strong>(888) - 958 - 0569</strong>
+    </div>
+    <div class="column">
+      MON: 9:00 AM - 6:00 PM </BR>
+      TUE: 9:00 AM - 6:00 PM </BR>
+      WED: 9:00 AM - 6:00 PM </BR>
+      THU: 9:00 AM - 6:00 PM </BR>
+      FRI: 9:00 AM - 6:00 PM </BR>
+      SAT: FART</BR>
+      SUN: SLEEP
+    </div>
+    <div class="column">
+      <div class="dropup">
+        <button class="dropbtn">For More Info</button>
+        <div class="dropup-content">
+          <a href="#">ABOUT US </a></BR>
+          <a href="#">REVIEWS</a> </BR>
+          <a href="#">SPECIAL OFFERS</a> </BR>
+          <a href="#">CONTACT US</a> </BR>
+          <a href="#">SITE MAP</a> </BR>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="social">
+  <a href="#" style="color: rgb(102, 100, 100); text-decoration:solid" class="fa fa-facebook"></a>
+  <a href="#" style="color: rgb(51, 170, 218); text-decoration:solid ; "class="fa fa-twitter"></a>
+  <a href="#" style="color: rgb(248, 88, 88); text-decoration:solid  " class="fa fa-google"></a>
+  <a href="#" style="color: rgb(253, 156, 172); text-decoration:solid " class="fa fa-instagram"></a>
+</div>
+</html>
+
+<!-- adding a comment -->
